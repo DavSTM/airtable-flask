@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: airtable-server
+    runtime: python
+    buildCommand: ""
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: AIRTABLE_API_KEY
+        value: patlSA0nmx5V0uqki.9d04cf2aef33b39fd993816125f096078f7c4b6902cf645d0e19ba9c3f7f2f15
+      - key: AIRTABLE_BASE_ID
+        value: appkzTDoZtJu777et
